@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Animation</title>
+<style>
+  body {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .ball {
+    width: 80px;
+    height: 80px;
+    background-color: #ff5733;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite ease-in-out;
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0;
+      background-color: #ff5733;
+    }
+    50% {
+      top: 200px;
+      background-color: #33c1ff;
+    }
+    100% {
+      top: 0;
+      background-color: #ff5733;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
